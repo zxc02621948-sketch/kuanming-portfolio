@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI 創界作品集 | 全端開發・AI 創作・自動化</title>
-  <meta name="description" content="AI 創界創意工作室作品集，收錄 AI 創作社群平台、真實商業官網、AI 客服自動化、原創網頁遊戲與 AI 原創 MV。">
+  <meta name="description" content="AI 創界創意工作室作品集，收錄 AI 創作社群平台、AI 動畫圖格對齊工具、真實商業官網、AI 客服自動化、原創網頁遊戲與 AI 原創 MV。">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
 
     <section class="proof-band" aria-label="作品概覽">
       <div>
-        <strong>4</strong>
+        <strong>5</strong>
         <span>主作品方向</span>
       </div>
       <div>
@@ -119,6 +119,38 @@
 
       <div class="project-grid">
         <article class="project">
+          <div class="project-image sprite-tool-card">
+            <img src="./assets/sprite-align-before-after.png" alt="AI 動畫圖格對齊工具修正前後 spritesheet 對比">
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">AI 工具開發 / Browser Tool</p>
+            <h3>AI 動畫圖格對齊工具</h3>
+            <p>
+              這是一個專門整理 AI 生成 spritesheet 的瀏覽器工具。AI 圖格單張看起來常常很漂亮，
+              但播放成動畫時會抖動、跨列跳動，或讓斬擊與特效尾韻被格線切掉。
+              我把這些問題轉成可操作的工具流程，讓使用者能調整來源框、選擇錨點、自動對齊並匯出修正後 PNG。
+            </p>
+            <p class="project-role">我的角色：工具流程設計、Canvas 影像處理、互動介面、對齊邏輯與文件撰寫。</p>
+            <ul class="project-points">
+              <li>支援拖放 PNG / JPG / WebP spritesheet，並可自訂欄列數。</li>
+              <li>使用透明度資料偵測每格主體範圍，提供主體中心、底部中心與視覺重心等對齊方式。</li>
+              <li>可手動編輯單格來源框，修正特效外溢、尾韻被切掉或相鄰格黏在一起的問題。</li>
+              <li>支援逐列對齊、共享命中點、外溢取樣邊距、動畫預覽與 PNG 匯出。</li>
+            </ul>
+            <div class="tags">
+              <span>Canvas</span>
+              <span>Image Processing</span>
+              <span>Game Assets</span>
+              <span>UX Tooling</span>
+            </div>
+            <div class="project-links">
+              <a href="https://zxc02621948-sketch.github.io/ai-sprite-align-tool/" target="_blank" rel="noopener noreferrer">線上工具</a>
+              <a href="https://github.com/zxc02621948-sketch/ai-sprite-align-tool" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
           <div class="project-image">
             <img src="./assets/fullyjet-hero.png" alt="富立傑木作裝修網站主視覺">
           </div>
@@ -154,8 +186,9 @@
         </article>
 
         <article class="project">
-          <div class="project-image">
-            <img src="./assets/black-tide-logo.png" alt="黑潮之途遊戲 Logo">
+          <div class="project-image game-logo-card">
+            <img class="game-bg" src="./assets/black-tide-bg.png" alt="" aria-hidden="true">
+            <img class="game-logo" src="./assets/black-tide-logo.png" alt="黑潮之途遊戲 Logo">
           </div>
           <div class="project-body">
             <p class="project-kicker">原創網頁遊戲 / Playable Game</p>
@@ -294,7 +327,7 @@
       <p class="eyebrow">Recent Progress</p>
       <h2>我把 AI 創作、網頁開發與自動化流程接在一起。</h2>
       <p>
-        這段時間完成了 AI 創作平台、真實商業官網、AI 客服系統、原創網頁遊戲與影音作品。
+        這段時間完成了 AI 創作平台、AI 動畫圖格對齊工具、真實商業官網、AI 客服系統、原創網頁遊戲與影音作品。
         對我來說，重點不只是學會工具，而是把工具推進到能部署、能展示、能服務真實需求的程度。
       </p>
       <p class="career-direction">
@@ -312,6 +345,7 @@
     <div class="footer-links">
       <a class="contact-link" href="mailto:zxc02621948@gmail.com">zxc02621948@gmail.com</a>
       <a href="https://aicreateaworld.com/" target="_blank" rel="noopener noreferrer">AI 創界</a>
+      <a href="https://zxc02621948-sketch.github.io/ai-sprite-align-tool/" target="_blank" rel="noopener noreferrer">動畫圖格對齊工具</a>
       <a href="https://www.fullyjet.com/" target="_blank" rel="noopener noreferrer">富立傑網站</a>
       <a href="https://www.fullyjet.com/" target="_blank" rel="noopener noreferrer">富立傑 AI 客服</a>
       <a href="https://the-black-night-box.onrender.com/" target="_blank" rel="noopener noreferrer">黑潮之途</a>

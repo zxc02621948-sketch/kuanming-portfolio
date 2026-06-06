@@ -337,21 +337,14 @@ h1 {
 }
 
 .sprite-tool-card {
-  display: grid;
-  place-items: center;
-  padding: 18px;
-  background:
-    linear-gradient(135deg, rgba(113, 209, 194, 0.18), transparent 44%),
-    linear-gradient(180deg, #101417, #07090a);
+  overflow: hidden;
+  background: #050607;
 }
 
 .sprite-tool-card img {
   width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #050607;
+  height: 100%;
+  object-fit: cover;
 }
 
 .game-logo-card {

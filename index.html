@@ -98,12 +98,14 @@
             讓作品同時具備欣賞、學習參考、社群互動與平台營運價值。
           </p>
           <p class="project-role">我的角色：產品規劃、前後端開發、資料模型、平台營運與 AI 內容製作。</p>
+          <p class="project-role"><strong>規模：</strong>約 10 萬行程式碼、202 個 API、23 個資料模型、127 個前端元件、5 個排程任務、80 條資料庫索引——全部獨立完成。</p>
           <ul class="project-points">
-            <li>圖片、音樂、影片與討論區整合的全端 AI 創作平台。</li>
-            <li>會員、投稿、留言、按讚、收藏、追蹤、通知與私訊等社群功能。</li>
-            <li>自動解析 AI 圖像元數據，保存 prompt、模型、LoRA、seed、steps、CFG、尺寸與 ComfyUI workflow。</li>
-            <li>自製音樂播放器，處理 Media Session、背景播放、播放清單、訂閱權限與釘選播放器狀態。</li>
-            <li>內建積分、曝光、分級、治理與 SEO 機制，具備平台營運雛形。</li>
+            <li>圖片、音樂、影片與討論區整合的全端 AI 創作社群，含完整會員、社群互動與虛擬經濟。</li>
+            <li><strong>AI 生成資訊自動解析：</strong>自寫 PNG 位元組層元數據解析，並逆向工程 ComfyUI 節點接線格式，以連線拓樸判斷正面／負面提示詞，再比對 Civitai 自動補上來源連結。</li>
+            <li><strong>即時熱門度排行：</strong>同一套衰退公式同時實作於 JS 與 MongoDB 聚合查詢（以 $$NOW 在查詢當下即時計算），排序不需每秒寫入即反映即時熱度。</li>
+            <li><strong>並發安全的點數經濟：</strong>帳本式賺取／消費／等級／訂閱，以防重複鍵 + 部分唯一索引確保並發下發放冪等、不重複入帳。</li>
+            <li><strong>生產級資安：</strong>JWT 演算法鎖定、跨來源（CSRF）防護、防偽造 IP 限流、開機強制金鑰檢查、三振自動停權 + 稽核紀錄。</li>
+            <li><strong>隱私感知 SEO：</strong>資料庫驅動動態 sitemap（排除成人／不願被索引內容）、Schema.org 結構化資料、邊緣即時生成分享預覽圖。</li>
           </ul>
           <div class="tags">
             <span>Next.js</span>

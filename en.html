@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuanming Chen — AI Application & Full-Stack Developer | Portfolio</title>
+  <meta name="description" content="Portfolio of Kuanming Chen, AI application & full-stack product developer. Featuring an AI creation community platform, an AI game-asset toolkit, a real client business site with an AI chatbot, an original web game, and an original AI music video.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Main navigation">
+    <a class="brand" href="#top">AI Create A World</a>
+    <nav>
+      <a href="#projects">Work</a>
+      <a href="#craft">Craft</a>
+      <a href="#contact">Links</a>
+      <a class="lang-switch" href="./index.html">中文</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">AI Applications · Full-Stack Products · Automation · Content</p>
+        <p class="hero-name">Kuanming Chen</p>
+        <p class="hero-role">AI Application Developer / Full-Stack Product Developer</p>
+        <h1>I turn AI ideas into products that ship — interactive, usable, and built to serve real needs.</h1>
+        <p class="hero-copy">
+          Recently I've built, end to end, a full-stack platform, an AI customer-service automation,
+          an original web game, and AI music &amp; video work. The throughline isn't showing off tech —
+          it's integrating creation, data, interaction, and business flow into things people can actually use.
+        </p>
+        <p class="hero-scope">
+          Available for AI application products, full-stack sites, n8n automation, and AI content integration.
+        </p>
+        <div class="hero-actions" aria-label="Quick links">
+          <a class="button primary" href="#projects">View work</a>
+          <a class="button ghost" href="https://aicreateaworld.com/" target="_blank" rel="noopener noreferrer">AI Create A World</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-band" aria-label="At a glance">
+      <div>
+        <strong>5</strong>
+        <span>core project areas</span>
+      </div>
+      <div>
+        <strong>Full-stack</strong>
+        <span>Next.js / MongoDB / Cloudflare</span>
+      </div>
+      <div>
+        <strong>Shipped</strong>
+        <span>live business site &amp; AI chatbot</span>
+      </div>
+      <div>
+        <strong>1500+</strong>
+        <span>views on the music-video short</span>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="section-heading">
+        <p class="eyebrow">Positioning</p>
+        <h2>Not a single tech demo — the ability to push AI applications all the way to usable products.</h2>
+      </div>
+      <p>
+        My core is product-minded full-stack development for AI: from feature breakdown, data models, and
+        front-end interaction to deployment and operating rules — so the work doesn't stop at a practice page,
+        but can be shown, operated, collect information, and even plug into a real business flow.
+        Before moving into AI and full-stack development, I ran my own contracting business with hands-on,
+        on-site service experience, so I care a lot about requirements, cost, and delivery.
+      </p>
+    </section>
+
+    <section id="projects" class="projects" aria-label="Featured projects">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <article class="project project-featured">
+        <div class="project-image project-video video-carousel" data-video-carousel data-mode="contain">
+          <div class="video-frame">
+            <video src="./assets/ai-create-showcase.mp4" poster="https://imagedelivery.net/qQdazZfBAN4654_waTSV7A/0d935995-b88e-4699-fa2d-6976734f8700/public" controls playsinline preload="metadata" aria-label="AI Create A World — image, video, and music showcase"></video>
+            <button class="sound-toggle" type="button">Sound on</button>
+          </div>
+          <div class="video-tabs" role="tablist" aria-label="Showcase video switcher">
+            <button class="active" type="button" data-src="./assets/ai-create-showcase.mp4" data-poster="https://imagedelivery.net/qQdazZfBAN4654_waTSV7A/0d935995-b88e-4699-fa2d-6976734f8700/public" data-label="AI Create A World — image, video, and music showcase" data-mode="contain"><span>Image</span><span>Reel</span></button>
+            <button type="button" data-src="./assets/mosquito-short.mp4" data-poster="./assets/mosquito-mv.jpg" data-label="Mosquito Buffet — 30-second short highlight" data-mode="wide"><span>Mosquito</span><span>Short</span></button>
+            <button type="button" data-src="./assets/starter-trainers.mp4" data-label="Starter-trainer humanized series — vertical short" data-mode="contain"><span>Vertical</span><span>Series</span></button>
+          </div>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Flagship / Full-Stack Platform</p>
+          <h3>AI Create A World</h3>
+          <p>
+            An AI creation community platform I built solo and actively operate — spanning images, music, and video.
+            This is my main project: it's not just a gallery; it preserves the model, prompt, and generation
+            parameters behind each piece, so the work doubles as a learning reference, a social space, and a
+            running platform.
+          </p>
+          <p class="project-role">My role: product planning, front- and back-end development, data modeling, platform operations, and AI content creation.</p>
+          <p class="project-role"><strong>Scale:</strong> ~100,000 lines of code, 202 APIs, 23 data models, 127 front-end components, 5 scheduled jobs, and 80 database indexes — all built solo.</p>
+          <ul class="project-points">
+            <li>A full-stack AI creation community unifying images, music, video, and discussion — with a complete membership system, social interaction, and a virtual economy.</li>
+            <li><strong>Automatic AI-metadata parsing:</strong> a hand-written PNG byte-layer metadata parser, plus reverse-engineering of ComfyUI's node-wiring format — using the graph topology to tell positive from negative prompts, then matching against Civitai to auto-fill source links.</li>
+            <li><strong>Real-time popularity ranking:</strong> the same decay formula implemented in both JS and a MongoDB aggregation (computed live at query time with $$NOW), so ranking reflects current heat without per-second writes.</li>
+            <li><strong>Concurrency-safe points economy:</strong> a ledger-based earn / spend / level / subscription system, using dedup keys + partial unique indexes to keep payouts idempotent and double-credit-proof under concurrency.</li>
+            <li><strong>Production-grade security:</strong> JWT algorithm pinning, CSRF protection, spoof-resistant IP rate limiting, a forced key check at boot, and three-strikes auto-suspension with an audit log.</li>
+            <li><strong>Privacy-aware SEO:</strong> a database-driven dynamic sitemap (excluding adult / no-index content), Schema.org structured data, and edge-generated share-preview images.</li>
+          </ul>
+          <div class="tags">
+            <span>Next.js</span>
+            <span>MongoDB</span>
+            <span>Cloudflare</span>
+            <span>AI Content</span>
+          </div>
+          <div class="project-links">
+            <a href="https://aicreateaworld.com/" target="_blank" rel="noopener noreferrer">Live platform</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-image sprite-tool-card">
+            <img src="./assets/sprite-align-before-after.png" alt="AI game-asset toolkit cleaning up a spritesheet, before and after">
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">AI Game-Asset Toolkit / Browser Tools</p>
+            <h3>AI Game-Asset Toolkit</h3>
+            <p>
+              A set of local, in-browser tools that turn AI-generated game art into usable assets.
+              Currently: background removal and animation-frame alignment — handling black, white, and
+              green-screen backgrounds, transparent fringing, spritesheet jitter, and cross-row drift —
+              then exporting transparent PNGs, grid data, and Godot / Unity import references.
+            </p>
+            <p class="project-role">My role: tool product design, Canvas image processing, the interactive UI, alignment logic, engine-export helpers, and the docs.</p>
+            <ul class="project-points">
+              <li>The background remover supports black, white, green-screen, checkerboard, and custom-color backgrounds, with smart edge cleanup and batch transparent-PNG export.</li>
+              <li>The frame-alignment tool supports drag-and-drop spritesheets, custom rows/columns, source-frame editing, anchor alignment, and animation preview.</li>
+              <li>The two tools chain together — cleaned, transparent assets flow straight into the alignment step.</li>
+              <li>Exports PNG + JSON grid data, and copies ready-to-paste Godot / Unity import settings.</li>
+            </ul>
+            <div class="tags">
+              <span>Canvas</span>
+              <span>Image Processing</span>
+              <span>Game Assets</span>
+              <span>Godot / Unity</span>
+            </div>
+            <div class="project-links">
+              <a href="https://zxc02621948-sketch.github.io/game-asset-bg-remover/" target="_blank" rel="noopener noreferrer">BG Remover</a>
+              <a href="https://zxc02621948-sketch.github.io/ai-sprite-align-tool/" target="_blank" rel="noopener noreferrer">Frame Align</a>
+              <a href="https://github.com/zxc02621948-sketch/game-asset-bg-remover" target="_blank" rel="noopener noreferrer">BG Remover GitHub</a>
+              <a href="https://github.com/zxc02621948-sketch/ai-sprite-align-tool" target="_blank" rel="noopener noreferrer">Frame Align GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="./assets/fullyjet-hero.png" alt="Fullyjet carpentry & renovation website hero">
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Real Client Work / Paid Project</p>
+            <h3>Fullyjet Carpentry — Business Site + AI Chatbot</h3>
+            <p>
+              A commercial site for a real carpentry &amp; renovation company — brand, services, case studies,
+              product routing, and an AI lead-handling chatbot. The chatbot is live: it answers questions,
+              detects intent, collects lead details, and pushes them to the owner's phone — AI conversation
+              wired into a real lead-generation flow.
+            </p>
+            <p class="project-role">My role: site design and development, brand content, the n8n automation, AI chatbot rule design, and abnormal-case testing.</p>
+            <ul class="project-points">
+              <li>15 project case-study pages and 200+ case images.</li>
+              <li>Unified entry points across LINE, phone, Facebook, and the website.</li>
+              <li>An n8n + Postgres + Gemini + Telegram automated lead pipeline.</li>
+              <li>The site's bottom-right widget and Facebook DMs are wired to the n8n AI chatbot — you can test the intake and intent-collection flow live.</li>
+              <li>Hardened through extensive abnormal-conversation testing: message buffering, hand-off deduplication, summary confirmation, output-format safeguards, and human takeover.</li>
+              <li>Produced case posts, dedicated short videos, and original music to tie the site's case studies, the Facebook page, and the brand's look together.</li>
+              <li>Helped sharpen the brand's selling points, product direction, and online content so the site, chatbot, and business goals line up.</li>
+            </ul>
+            <div class="tags">
+              <span>Business Site</span>
+              <span>n8n</span>
+              <span>Gemini</span>
+              <span>SEO</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.fullyjet.com/" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.facebook.com/profile.php?id=100048974186390&locale=zh_TW" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.fullyjet.com/" target="_blank" rel="noopener noreferrer">Try the AI chatbot (bottom-right)</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image game-logo-card">
+            <img class="game-bg" src="./assets/black-tide-bg.png" alt="" aria-hidden="true">
+            <img class="game-logo" src="./assets/black-tide-logo.png" alt="Path of the Black Tide game logo">
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Original Web Game / Playable</p>
+            <h3>Path of the Black Tide</h3>
+            <p>
+              An original, systems-driven web game with complete, genuinely playable core loops.
+              Not just visuals — I designed the combat rhythm, card selection, dice resolution,
+              resonance balancing, and enemy skills from scratch.
+            </p>
+            <p class="project-role">My role: game-systems design, front-end interaction, combat balancing, and audio/animation integration.</p>
+            <ul class="project-points">
+              <li>Cards, dice, resonance, relics, enemy skills, and boss fights form a complete combat system.</li>
+              <li>Events, map progression, sound, and combat animation support a continuous, playable run.</li>
+              <li>The core is complete; I'm still tuning art, tutorials, and some monster values.</li>
+            </ul>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>Game UI</span>
+              <span>Combat System</span>
+              <span>Audio</span>
+            </div>
+            <div class="project-links">
+              <a href="https://the-black-night-box.onrender.com/" target="_blank" rel="noopener noreferrer">Play it</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="./assets/mosquito-mv.jpg" alt="Mosquito Buffet — original AI music video thumbnail">
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">AI Music Video / Original</p>
+            <h3>"Mosquito Buffet" — Original AI Music Video</h3>
+            <p>
+              An original AI music video I made end to end — concept, AI music and visuals, a unified visual
+              style, and editing. The Facebook short version has reached around 1,500 views, a real signal of
+              audience response.
+            </p>
+            <p class="project-role">My role: concept, AI music generation, AI visuals, editing, and short-video packaging for social.</p>
+            <ul class="project-points">
+              <li>Built from fully AI-generated assets, assembled in the edit.</li>
+              <li>Anime battle-style visuals, a humorous theme, and a rhythm-driven cut.</li>
+              <li>A showcase of the content-creation chops behind AI Create A World.</li>
+            </ul>
+            <div class="tags">
+              <span>AI Music</span>
+              <span>AI Video</span>
+              <span>Editing</span>
+              <span>YouTube</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=mQuI5l_p_Xk" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="depth" aria-label="Platform depth">
+      <div class="depth-layout">
+        <div class="depth-sticky">
+          <p class="eyebrow">Platform Depth</p>
+          <h2>AI Create A World isn't a landing page — it's a creator platform with a real operating structure.</h2>
+          <p>
+            I built it in four layers — content data, creator pages, community interaction, and platform
+            operations — so what looks like a showcase site actually has full product logic underneath.
+          </p>
+        </div>
+        <div class="depth-list">
+          <article>
+            <span>01</span>
+            <h3>Creation-Reference System</h3>
+            <p>Based on whether a piece carries valid metadata, it's auto-routed to either the gallery or the creation-reference view — separating pure viewing from learnable, parameter-rich work.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Creator Profiles</h3>
+            <p>Uploads, collections, image/video/music filtering, rating-based search, and a per-author player — a complete creator hub.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Community &amp; Discussion</h3>
+            <p>Works can be cited in discussion posts, linking the gallery, creation-reference, and community threads together.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Operations &amp; Governance</h3>
+            <p>Built-in points, levels, daily quotas, exposure tokens, popularity scoring, reporting, warnings, delisting, re-rating, cold storage, and pinning.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Original Content</h3>
+            <p>Most of the platform's work is mine — music, images, video, and serialized sets, like a 30+ piece humanized-Pokémon same-frame series.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="craft" class="craft" aria-label="Craft">
+      <div class="section-heading">
+        <p class="eyebrow">Craft</p>
+        <h2>What I'm building isn't a single skill — it's the whole pipeline from idea to shipped work.</h2>
+      </div>
+      <div class="capability-grid">
+        <div>
+          <h3>Product Development</h3>
+          <p>From feature breakdown, data models, APIs, permissions, and exposure rules to content governance, front-end interaction, and deployment — turning work into products that keep scaling.</p>
+        </div>
+        <div>
+          <h3>AI Creation</h3>
+          <p>Image, music, video, and serialized content, with a focus on style control, prompts, generation parameters, and the final result.</p>
+        </div>
+        <div>
+          <h3>Automation</h3>
+          <p>Using n8n, Postgres, Gemini, Messenger/Web chat, and Telegram to design multi-turn dialogue, intent detection, data collection, and lead-notification flows.</p>
+        </div>
+        <div>
+          <h3>Interactive Experience</h3>
+          <p>Game UI, combat pacing, animation, sound, and state logic — making work not just viewable, but playable and felt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" aria-label="Exploration">
+      <p class="eyebrow">Exploration</p>
+      <h2>Beyond shipped work, I keep testing the business viability of AI applications.</h2>
+      <p>
+        Along the way I've explored local voice-model training, 2D-to-3D / Tripo3D character commercialization,
+        a carpentry measurement-and-quote app, hinoki-wood inventory commercialization, and sound-effect
+        blockchain. Most stayed exploration rather than finished work — after weighing hardware, data volume,
+        subscription cost, post-production barriers, test equipment, and partners' willingness to execute,
+        I focused resources on the more shippable full-stack platform, AI chatbot, and interactive work.
+      </p>
+    </section>
+
+    <section class="timeline" aria-label="Recent progress">
+      <p class="eyebrow">Recent Progress</p>
+      <h2>I've wired AI creation, web development, and automation together.</h2>
+      <p>
+        In this stretch I've completed an AI creation platform, the AI game-asset toolkit, a real business site,
+        an AI chatbot system, an original web game, and music/video work. For me the point isn't just learning
+        the tools — it's pushing them far enough to deploy, demo, and serve real needs.
+      </p>
+      <p class="career-direction">
+        I'm open to roles and freelance projects in AI application development, AI automation, and full-stack
+        product development — especially with teams that turn ideas into usable products fast.
+      </p>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Contact &amp; Work</h2>
+      <p class="footer-note">Open to interviews, collaboration, and AI development inquiries.</p>
+    </div>
+    <div class="footer-links">
+      <a class="contact-link" href="mailto:zxc02621948@gmail.com">zxc02621948@gmail.com</a>
+      <a href="https://aicreateaworld.com/" target="_blank" rel="noopener noreferrer">AI Create A World</a>
+      <a href="https://zxc02621948-sketch.github.io/game-asset-bg-remover/" target="_blank" rel="noopener noreferrer">BG Remover</a>
+      <a href="https://zxc02621948-sketch.github.io/ai-sprite-align-tool/" target="_blank" rel="noopener noreferrer">Frame-Align Tool</a>
+      <a href="https://www.fullyjet.com/" target="_blank" rel="noopener noreferrer">Fullyjet Site</a>
+      <a href="https://www.fullyjet.com/" target="_blank" rel="noopener noreferrer">Fullyjet AI Chatbot</a>
+      <a href="https://the-black-night-box.onrender.com/" target="_blank" rel="noopener noreferrer">Path of the Black Tide</a>
+      <a href="https://www.youtube.com/watch?v=mQuI5l_p_Xk" target="_blank" rel="noopener noreferrer">Music Video</a>
+    </div>
+  </footer>
+  <script>
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+
+    window.addEventListener("load", () => {
+      window.scrollTo(0, 0);
+    });
+
+    document.querySelectorAll("[data-video-carousel]").forEach((carousel) => {
+      const video = carousel.querySelector("video");
+      const soundToggle = carousel.querySelector(".sound-toggle");
+      const buttons = carousel.querySelectorAll(".video-tabs button");
+      let hasUserPickedVideo = false;
+      let soundUnlocked = false;
+
+      const updateSoundToggle = () => {
+        if (!soundToggle) return;
+        soundToggle.hidden = soundUnlocked && !video.muted;
+      };
+
+      const playVideo = ({ withSound = false } = {}) => {
+        if (withSound) {
+          video.muted = false;
+          soundUnlocked = true;
+          updateSoundToggle();
+        }
+
+        const playRequest = video.play();
+        if (!playRequest) return;
+
+        playRequest.catch(() => {
+          video.muted = true;
+          updateSoundToggle();
+          video.play().catch(() => {});
+        });
+      };
+
+      soundToggle?.addEventListener("click", () => {
+        soundUnlocked = true;
+        video.muted = false;
+        updateSoundToggle();
+        playVideo({ withSound: true });
+      });
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          if (button.classList.contains("active")) return;
+
+          hasUserPickedVideo = true;
+          const scrollX = window.scrollX;
+          const scrollY = window.scrollY;
+          const keepScroll = () => window.scrollTo(scrollX, scrollY);
+          const playSelectedVideo = () => {
+            keepScroll();
+            playVideo({ withSound: true });
+          };
+
+          buttons.forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+
+          video.pause();
+          carousel.dataset.mode = button.dataset.mode || "contain";
+          video.src = button.dataset.src;
+          video.poster = button.dataset.poster || "";
+          video.setAttribute("aria-label", button.dataset.label || button.textContent.trim());
+          video.addEventListener("loadedmetadata", playSelectedVideo, { once: true });
+          video.load();
+          requestAnimationFrame(keepScroll);
+          window.setTimeout(keepScroll, 80);
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            playVideo({ withSound: hasUserPickedVideo });
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.45 });
+
+      observer.observe(carousel);
+      updateSoundToggle();
+    });
+  </script>
+</body>
+</html>

@@ -267,6 +267,7 @@ h1 {
 
 .intro,
 .projects,
+.prototypes,
 .depth,
 .craft,
 .timeline,
@@ -301,6 +302,65 @@ h1 {
 .projects {
   background: #111417;
   border-bottom: 1px solid var(--line);
+}
+
+.prototypes {
+  background: #0d0f11;
+  border-bottom: 1px solid var(--line);
+}
+
+.prototype-heading {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(300px, 1.18fr);
+  gap: 56px;
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+.prototype-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  line-height: 1.16;
+}
+
+.prototype-heading > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.prototype-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.project.prototype-card {
+  grid-template-columns: 1fr;
+}
+
+.project-image.prototype-image {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.prototype-image img {
+  object-position: top center;
+}
+
+.prototype-quote-image {
+  background: #eef3fa;
+}
+
+.prototype-status {
+  margin-top: 16px;
+  padding-left: 12px;
+  border-left: 3px solid var(--amber);
+  color: #d9c7a8 !important;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .projects > .section-heading,
@@ -750,6 +810,7 @@ h1 {
 
 @media (max-width: 1040px) {
   .project-grid,
+  .prototype-grid,
   .capability-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -818,6 +879,8 @@ h1 {
   .proof-band,
   .intro,
   .project-grid,
+  .prototype-grid,
+  .prototype-heading,
   .capability-grid,
   .timeline {
     grid-template-columns: 1fr;
@@ -841,6 +904,7 @@ h1 {
 
   .intro,
   .projects,
+  .prototypes,
   .depth,
   .craft,
   .timeline,
